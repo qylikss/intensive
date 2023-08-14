@@ -6,13 +6,8 @@ class Node:
 
 
 root = Node(8, Node(5, Node(3), Node(6)), Node(10, Node(9), Node(11)))
-
+print(root)
 
 def bfs(root):
-    if root:
-        print(root.key, end=' ')
-        bfs(root.left)
-        bfs(root.right)
 
-
-print(bfs(root))
+    print(root.key)
